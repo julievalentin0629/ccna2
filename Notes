@@ -130,3 +130,15 @@ Acknowledge - Unicast
 ______________________________________
 Assignment
 Check youtube #Team Rivan part 1-3
+
+
+_____________________________
+!@D1
+conf t
+ int e3/3
+ no switchport
+ no shut
+ ip add dhcp
+ end
+
+bp
