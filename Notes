@@ -1,0 +1,69 @@
+WiFi/PC: C1sc0123
+
+Top 3 command in cisco
+ss: show start
+sr: show run
+crs: copy run start
+
+en + tab : enable (priveledge mode)
+SIIB: show ip int brief
+SMAC: show mac address-table
+SCN: show cdp neighbor
+SIR: show ip router
+SPI: show power inline
+
+OSI (TS)
+physical layer: show power inline
+
+router automatically connects device with cisco (core switch) you need to run #no shutdown
+ 
+ access webLAB: http://208.8.8.167/laboratories.php
+ Use D1 and R4
+ 
+ use github for notes and project 
+ get repository > forked > edit
+ edit tilde (~~) enter replacement then apply to all
+ 
+telnet (virtual)
+console (physical)
+
+dhcp server provides 7 things
+ip address
+subnet mask
+default router
+dns 1 and 2
+tftp server 1 and 2
+
+Camera
+mac starts with 001a made in us
+ 50    001a.0709.c25b    DYNAMIC     Fa0/6
+ 50    001a.070a.27e4    DYNAMIC     Fa0/8
+ 
+ after config t always ping then nmap -v <ip address>  
+ check open port
+
+IP Phone
+ 100    ccd8.c1fb.09ff    DYNAMIC     Fa0/5
+ 100    ccd8.c1fb.10a9    DYNAMIC     Fa0/7
+ 
+ ipv4 0.0.0.0 0.0.0.0 - this means all ip is allowed
+ 
+ 2 codec (translate analog to digital phone signal) in ph
+ g711 free
+ g729
+ 
+ Edge router 5 use routing via
+ EIGRP
+ OSPF
+ BGP
+ Static
+ VPN
+
+
+Assignment: install Visual Studio Code
+
+Automation:
+Python
+REST APIs
+JSON,XML,YAML (cloud) *check kubernetes
+
