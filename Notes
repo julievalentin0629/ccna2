@@ -12,6 +12,20 @@ SCN: show cdp neighbor
 SIR: show ip router
 SPI: show power inline
 
+@corebaba
+config t
+monitor session 1 source interface fa0/5, fa0/7
+monitor session 1 destination interface fa0/1
+
+VOIP
+1 Physical - PoE 802
+2 MAC
+3 IP
+4 SCCP 2000, SIP 5060
+5 RTP
+6 CODEC G711 G&29
+7 Application - Wireshark
+
 OSI (TS)
 physical layer: show power inline
 
@@ -67,3 +81,52 @@ Python
 REST APIs
 JSON,XML,YAML (cloud) *check kubernetes
 
+vlan assignment -- how to assign vlan 10
+!@A1
+conf t
+ interface e0/0
+  switchport mode access
+  switchport access vlan 10
+end
+
+show vlan br
+
+!@A2\
+conf t
+ interface e1/0
+  switchport mode access
+  switchport access vlan 10
+end
+
+show vlan br
+
+
+_________
+!@P1
+conf t
+ int e0/0
+  no shut
+  ip add dhcp
+  end
+bp
+
+
+!@P2
+conf t
+ int e1/0
+  no shut
+  ip add dhcp
+  end
+bp
+
+__________________________________
+DHCP
+Discover - Broadcaset
+Offer - Unicast
+Request - Broadcaset
+Acknowledge - Unicast
+
+
+______________________________________
+Assignment
+Check youtube #Team Rivan part 1-3
