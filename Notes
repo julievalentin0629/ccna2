@@ -62,7 +62,7 @@ IP Phone
  
  ipv4 0.0.0.0 0.0.0.0 - this means all ip is allowed
  
- 2 codec (translate analog to digital phone signal) in ph
+ top 2 codec (translate analog to digital phone signal) in ph
  g711 free
  g729
  
@@ -73,13 +73,24 @@ IP Phone
  Static
  VPN
 
+__________________________________
+DHCP
+Discover - Broadcaset
+Offer - Unicast
+Request - Broadcaset
+Acknowledge - Unicast
 
+__________________________________
 Assignment: install Visual Studio Code
 
 Automation:
 Python
 REST APIs
 JSON,XML,YAML (cloud) *check kubernetes
+
+______________________________________
+Assignment
+Check youtube #Team Rivan part 1-3
 
 vlan assignment -- how to assign vlan 10
 !@A1
@@ -118,18 +129,6 @@ conf t
   ip add dhcp
   end
 bp
-
-__________________________________
-DHCP
-Discover - Broadcaset
-Offer - Unicast
-Request - Broadcaset
-Acknowledge - Unicast
-
-
-______________________________________
-Assignment
-Check youtube #Team Rivan part 1-3
 
 
 _____________________________
