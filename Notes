@@ -19,11 +19,11 @@ monitor session 1 destination interface fa0/1
 
 VOIP
 1 Physical - PoE 802
-2 MAC
-3 IP
-4 SCCP 2000, SIP 5060
-5 RTP
-6 CODEC G711 G&29
+2 Data Link - MAC
+3 Network - IP
+4 Transport - SCCP 2000, SIP 5060
+5 Session - RTP
+6 Presentation - CODEC G711 G&29
 7 Application - Wireshark
 
 OSI (TS)
